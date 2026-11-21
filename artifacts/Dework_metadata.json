@@ -1,0 +1,305 @@
+{
+	"compiler": {
+		"version": "0.8.34+commit.80d5c536"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"inputs": [
+					{
+						"internalType": "address",
+						"name": "_initialOwner",
+						"type": "address"
+					}
+				],
+				"stateMutability": "nonpayable",
+				"type": "constructor"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"name": "employerprofiles",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "id",
+						"type": "uint256"
+					},
+					{
+						"internalType": "string",
+						"name": "name",
+						"type": "string"
+					},
+					{
+						"internalType": "address",
+						"name": "wallet",
+						"type": "address"
+					},
+					{
+						"internalType": "bool",
+						"name": "isHiring",
+						"type": "bool"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"name": "freelancerprofiles",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "id",
+						"type": "uint256"
+					},
+					{
+						"internalType": "string",
+						"name": "name",
+						"type": "string"
+					},
+					{
+						"internalType": "address",
+						"name": "wallet",
+						"type": "address"
+					},
+					{
+						"internalType": "uint8",
+						"name": "yoe",
+						"type": "uint8"
+					},
+					{
+						"internalType": "bool",
+						"name": "isAvailableHire",
+						"type": "bool"
+					},
+					{
+						"internalType": "uint256",
+						"name": "hourlyRateWei",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "getEmployerProfiles",
+				"outputs": [
+					{
+						"components": [
+							{
+								"internalType": "uint256",
+								"name": "id",
+								"type": "uint256"
+							},
+							{
+								"internalType": "string",
+								"name": "name",
+								"type": "string"
+							},
+							{
+								"internalType": "address",
+								"name": "wallet",
+								"type": "address"
+							},
+							{
+								"internalType": "bool",
+								"name": "isHiring",
+								"type": "bool"
+							}
+						],
+						"internalType": "struct Employerprofile[]",
+						"name": "",
+						"type": "tuple[]"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "getFreelancerProfiles",
+				"outputs": [
+					{
+						"components": [
+							{
+								"internalType": "uint256",
+								"name": "id",
+								"type": "uint256"
+							},
+							{
+								"internalType": "string",
+								"name": "name",
+								"type": "string"
+							},
+							{
+								"internalType": "address",
+								"name": "wallet",
+								"type": "address"
+							},
+							{
+								"internalType": "uint8",
+								"name": "yoe",
+								"type": "uint8"
+							},
+							{
+								"internalType": "bool",
+								"name": "isAvailableHire",
+								"type": "bool"
+							},
+							{
+								"internalType": "uint256",
+								"name": "hourlyRateWei",
+								"type": "uint256"
+							}
+						],
+						"internalType": "struct Freelancerprofile[]",
+						"name": "",
+						"type": "tuple[]"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "getNumberOfEmployers",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "getNumberOfFreelancers",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "initialOwner",
+				"outputs": [
+					{
+						"internalType": "address",
+						"name": "",
+						"type": "address"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "string",
+						"name": "_name",
+						"type": "string"
+					}
+				],
+				"name": "registerEmployerProfile",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "string",
+						"name": "_name",
+						"type": "string"
+					},
+					{
+						"internalType": "uint8",
+						"name": "yoe",
+						"type": "uint8"
+					},
+					{
+						"internalType": "uint256",
+						"name": "hourlyRateWei",
+						"type": "uint256"
+					}
+				],
+				"name": "registerFreelancerProfile",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "updateHourlyRate",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			}
+		],
+		"devdoc": {
+			"kind": "dev",
+			"methods": {},
+			"version": 1
+		},
+		"userdoc": {
+			"kind": "user",
+			"methods": {},
+			"version": 1
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"contracts/Dework.sol": "Dework"
+		},
+		"evmVersion": "osaka",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"contracts/Dework.sol": {
+			"keccak256": "0xa1611eea05d9a68f90b897f1689d3415b4e996db22645bbae1a9b98d4758cf84",
+			"license": "GPL-3.0",
+			"urls": [
+				"bzz-raw://756372ca4307fe13472cbd11c550f7bff54dc7e157f125fd98e5ccc5936ee8d1",
+				"dweb:/ipfs/QmWGSTMhzj8JE1k4xPBNfkbvLuQYPibpx6CuydFnArW84F"
+			]
+		},
+		"contracts/types/DeWorkTypes.sol": {
+			"keccak256": "0x5efb02942a8a4b4c54ab0dae7cacfe6b357c14139362caa23d01b6df90145883",
+			"license": "GPL-3.0",
+			"urls": [
+				"bzz-raw://7b2d003fa44f02724d5cbb8d226bdaaea6ecdae38f06c7728ed475535f081f52",
+				"dweb:/ipfs/QmX9Ti3JPt2nrq2KkyB8YhdTwr9GfXgdA2sgd1Wkwvug1s"
+			]
+		}
+	},
+	"version": 1
+}
